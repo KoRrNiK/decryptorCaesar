@@ -1,0 +1,30 @@
+:root {
+	--fc-accent1: #4776E6;
+	--fc-accent2: #8E54E9;
+	--fc-background1: #161617;
+	--fc-background2: #1C1C20;
+	--fc-background3: #2a2a30;
+	--fc-globalcolor1: #fff;
+	--fc-globalcolor2: #666;
+	--fc-black: 0;
+	--fc-white: 255;
+
+}
+
+* {
+	font-family: 'Montserrat';
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--fc-background1);
+	color: var(--fc-globalcolor1);
+}
+
+b {
+	background: -webkit-linear-gradient(45deg, var(--fc-accent1), var(--fc-accent2));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

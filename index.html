@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<script src="js/script.js"></script>
+
+	<meta charset="utf-8">
+
+</head>
+
+
+<body>
+
+	<div class="container">
+
+		<div class="fc-nav">
+			<b><i class="fas fa-lock-open"></i>DECRYPTOR CESAR</b>
+		</div>
+
+		<div class="fc-box">
+			<form onsubmit="return false;" autocomplete="off">
+
+				<div class="optionForm">
+					<input type="text" id="firstnumber" placeholder="Pierwsza Liczba" maxlength="2">
+					<div class="clear"></div>
+				</div>
+				<div class="optionForm">
+					<input type="text" id="secondnumber" placeholder="Druga Liczba" maxlength="2">
+					<div class="clear"></div>
+				</div>
+
+				<div class="optionForm">
+					<input type="text" id="codeText" placeholder="Ciąg do deszyfracji" maxlength="33">
+					<div class="clear"></div>
+				</div>
+
+				<input id="decryptStart" type="submit" value="Deszyfruj" class="optionFormSubmit">
+
+				<div class="codeDecrypte">
+					Twój szyfr:
+					<b id="decyrptedCode"></b>
+					<div class="clear"></div>
+				</div>
+
+			</form>
+		</div>
+		<div class="copyText"><i class="fas fa-copy"></i>Skopiowany!</div>
+	</div>
+
+</body>
+
+</html>

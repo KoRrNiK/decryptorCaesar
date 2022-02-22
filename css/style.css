@@ -1,0 +1,127 @@
+@import url('global.css');
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+.fc-box{
+	padding: 40px 10px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: var(--fc-background2);
+
+	padding-bottom: 40px;
+	box-shadow: 0px 12px 12px 6px rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 12%),
+		inset 6px 6px 5px rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 12%),
+		inset -6px -6px 5px rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 12%);
+	border: 5px solid rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 25%);
+	border-radius: 20px;
+}
+
+.fc-nav{
+	overflow: hidden;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 15px 5px 25px;
+	border-radius: 15px;
+	background: var(--fc-background2);
+	box-shadow: 0px 6px 6px 3px rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 12%),
+		inset 3px 3px 2px rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 12%),
+		inset -3px -3px 2px rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 12%);
+	border: 2px solid rgb(var(--fc-black) var(--fc-black) var(--fc-black) / 20%);
+	font-size: 30px;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+.fc-nav .fa-lock-open{
+	padding-right: 5px;
+}
+
+.optionForm input {
+	float: left;
+	background: none;
+	border: none;
+	color: inherit;
+	line-height: 32px;
+	padding: 0px 10px;
+}
+.clear {
+	clear: both;
+}
+.optionForm:hover {
+	color: var(--fc-globalcolor1);
+	border-bottom: 2px solid var(--fc-globalcolor1);
+}
+
+.optionForm {
+	transition: 0.2s;
+	padding-bottom: 4px;
+	clear: both;
+	width: 260px;
+	margin: 10px auto;
+	border-bottom: 2px solid var(--fc-accent1);
+	color: var(--fc-accent1);
+}
+
+.optionFormSubmit:hover {
+	background: var(--fc-globalcolor1);
+	color: var(--fc-globalcolor2);
+	border-radius: 10px;
+}
+
+.optionFormSubmit {
+	display: block;
+	width: 260px;
+	margin: 40px auto;
+	background: var(--fc-accent1);
+	border: none;
+	color: var(--fc-globalcolor1);
+	padding: 16px 0px;
+	transition: .2s;
+}
+
+.codeDecrypte {
+	display: none;
+	font-size: 16px;
+	color: var(--fc-globalcolor1);
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+}
+
+#decyrptedPassword{
+	user-select: all !important;
+}
+
+.copyText{
+
+	background: var(--fc-background2);
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	transition: 0.5s;
+	text-align: center;
+	padding: 20px;
+	border-top: 1px solid var(--fc-accent1);
+	border-bottom: 1px solid var(--fc-accent1);
+	border-left: 15px solid var(--fc-accent1);
+	border-right: 15px solid var(--fc-accent1);
+	filter: drop-shadow(0 0 5px var(--fc-accent1));
+	border-radius: 4px;
+	width: 200px;
+}
+
+.copyText .fa-copy{
+	padding-right: 5px;
+	font-size: 17px;
+	color:var(--fc-accent1);
+	filter: drop-shadow(0 0 5px var(--fc-accent1));
+}
