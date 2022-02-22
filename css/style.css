@@ -42,6 +42,12 @@ ul {
 	font-size: 30px;
 	letter-spacing: 10px;
 	text-align: center;
+	user-select: none;
+}
+
+.fc-nav h2{
+	font-size: 12px;
+	margin-top: 10px;
 }
 
 .fc-nav .fa-lock-open{
@@ -56,6 +62,17 @@ ul {
 	line-height: 32px;
 	padding: 0px 10px;
 }
+
+.optionForm input::-webkit-outer-spin-button,
+.optionForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.optionForm input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .clear {
 	clear: both;
 }
@@ -93,7 +110,7 @@ ul {
 	border: none;
 	color: var(--fc-globalcolor1);
 	padding: 16px 0px;
-	transition: .2s;
+	transition: 0.3s;
 }
 
 .codeDecrypte {

@@ -94,9 +94,7 @@ $(document).ready(function () {
 				"display": "none"
 			});
 		});
-		$('#emoteWindow').animate({
-			"margin-top": 180
-		}, 100);
+
 	});
 
 	$('.author').click(function () {
