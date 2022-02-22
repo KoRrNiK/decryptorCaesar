@@ -76,11 +76,13 @@ ul {
 }
 
 .optionFormSubmit:hover {
-	transition: 0.5s linear border-radius letter-spacing;
+	transition: 0.4s linear;
 	background: linear-gradient(222deg, var(--fc-accent1), var(--fc-accent2));
 	color: var(--fc-globalcolor1);
 	border-radius: 10px;
 	letter-spacing: 2px;
+	box-shadow: inset 20px 0px 20px var(--fc-accent2), 
+		inset -50px 0px 20px var(--fc-accent1);
 }
 
 .optionFormSubmit {
@@ -219,7 +221,7 @@ ul {
 }
 
 .optionsWindow {
-	display: inline-block;
+	display: block;
 	float: right;
 	font-size: 24px;
 	color: var(--fc-globalcolor2);
