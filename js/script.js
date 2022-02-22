@@ -1,27 +1,3 @@
-function number_First_Second(a, b) {
-	let c = 0;
-	switch (a) {
-		case 8: {
-			c = parseInt(b, 8);
-			break;
-		}
-		case 10: {
-			c = b;
-			break;
-		}
-		case 16: {
-			c = parseInt(b, 16);
-			break;
-		}
-		default: {
-			c = b;
-			break;
-		}
-	}
-
-	return c;
-}
-
 function copyCode() {
 	var $temp = $("<input>");
 	$("body").append($temp);
@@ -45,12 +21,12 @@ function copyText(time) {
 
 function decryptStart() {
 
-	const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+	const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 	let word = $("#codeText").val();
 	let firstnumber = Number($("#firstnumber").val());
 	let secondnumber = Number($("#secondnumber").val());
-	let shift = number_First_Second(firstnumber, secondnumber);
+	let shift = parseInt(secondnumber, firstnumber);
 	let decyrptedCode = "";
 
 	let lengthA = alphabet.length;
@@ -60,8 +36,8 @@ function decryptStart() {
 		for (var x = 0; x < lengthA; x++) {
 			if (word.charAt(i) === alphabet.charAt(x)) {
 				let newAlphabet = x + shift;
-				if (newAlphabet > lengthA) {
-					while (newAlphabet > lengthA) {
+				if (newAlphabet >= lengthA) {
+					while (newAlphabet >= lengthA) {
 						newAlphabet = newAlphabet - lengthA;
 					}
 				}
