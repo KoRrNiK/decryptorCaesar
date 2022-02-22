@@ -48,6 +48,7 @@ ul {
 .fc-nav h2{
 	font-size: 12px;
 	margin-top: 10px;
+	letter-spacing: 5px;
 }
 
 .fc-nav .fa-lock-open{
