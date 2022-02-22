@@ -81,6 +81,35 @@ function decryptStart() {
 
 $(document).ready(function () {
 
+	$('.closeWindow').click(function () {
+		$level = $(this).attr("parent");
+		$obj = $(this);
+		for ($i = 0; $i < $level; $i++)
+			$obj = $obj.parent();
+
+		$obj.animate({
+			"opacity": 0.0
+		}, 150, function () {
+			$obj.css({
+				"display": "none"
+			});
+		});
+		$('#emoteWindow').animate({
+			"margin-top": 180
+		}, 100);
+	});
+
+	$('.author').click(function () {
+
+		$('#author').css({
+			"display": "block"
+		})
+		$('#author').animate({
+			"opacity": "1.0"
+		}, 200)
+
+	});
+
 	$('#decryptStart').click(function () {
 		decryptStart();
 	});
