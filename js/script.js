@@ -20,7 +20,7 @@ function copyText(time) {
 }
 
 function number_First_Second(a, b){
-    let c;
+    /*let c;
     switch(a){
         case 8:{ 
             c = parseInt(b,8);
@@ -39,7 +39,8 @@ function number_First_Second(a, b){
             break;
 		}
     }
-    return c;
+    return c;*/
+	return parseInt(b, a);
 }
 
 function decryptStart() {
