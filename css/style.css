@@ -10,7 +10,7 @@ ul {
 	list-style: none;
 }
 
-.fc-box{
+.fc-box {
 	padding: 40px 10px;
 	margin-top: 15px;
 	margin-bottom: 30px;
@@ -26,7 +26,7 @@ ul {
 	border-radius: 20px;
 }
 
-.fc-nav{
+.fc-nav {
 	overflow: hidden;
 	margin-top: 15px;
 	margin-bottom: 30px;
@@ -45,13 +45,13 @@ ul {
 	user-select: none;
 }
 
-.fc-nav h2{
+.fc-nav h2 {
 	font-size: 12px;
 	margin-top: 10px;
 	letter-spacing: 5px;
 }
 
-.fc-nav .fa-lock-open{
+.fc-nav .fa-lock-open {
 	padding-right: 5px;
 }
 
@@ -66,12 +66,12 @@ ul {
 
 .optionForm input::-webkit-outer-spin-button,
 .optionForm input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .optionForm input[type=number] {
-  -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 .clear {
@@ -91,15 +91,16 @@ ul {
 	margin: 10px auto;
 	border-bottom: 2px solid var(--fc-accent1);
 	color: var(--fc-accent1);
+	border-radius: 2px;
 }
 
 .optionFormSubmit:hover {
 	transition: 0.4s linear;
 	background: linear-gradient(222deg, var(--fc-accent1), var(--fc-accent2));
 	color: var(--fc-globalcolor1);
-	border-radius: 10px;
+	border-radius: 15px 15px 10px 10px;
 	letter-spacing: 2px;
-	box-shadow: inset 20px 0px 20px var(--fc-accent2), 
+	box-shadow: inset 20px 0px 20px var(--fc-accent2),
 		inset -50px 0px 20px var(--fc-accent1);
 }
 
@@ -112,7 +113,24 @@ ul {
 	color: var(--fc-globalcolor1);
 	padding: 16px 0px;
 	transition: 0.3s;
+
+	animation: radiusButton 4s ease-out;
+	animation-iteration-count: infinite;
+
 }
+
+@keyframes radiusButton {
+
+	0%,
+	100% {
+		border-radius: 20px 20px 10px 10px;
+	}
+
+	50% {
+		border-radius: 10px 10px 5px 5px;
+	}
+}
+
 
 .codeDecrypte {
 	display: none;
@@ -123,11 +141,11 @@ ul {
 	cursor: pointer;
 }
 
-#decyrptedPassword{
+#decyrptedPassword {
 	user-select: all !important;
 }
 
-.copyText{
+.copyText {
 	background: var(--fc-background2);
 	margin-left: auto;
 	margin-right: auto;
@@ -144,10 +162,10 @@ ul {
 	width: 200px;
 }
 
-.copyText .fa-copy{
+.copyText .fa-copy {
 	padding-right: 5px;
 	font-size: 17px;
-	color:var(--fc-accent1);
+	color: var(--fc-accent1);
 	filter: drop-shadow(0 0 5px var(--fc-accent1));
 }
 

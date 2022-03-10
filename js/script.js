@@ -19,44 +19,19 @@ function copyText(time) {
 
 }
 
-function number_First_Second(a, b){
-    /*let c;
-    switch(a){
-        case 8:{ 
-            c = parseInt(b,8);
-            break;
-		}
-        case 10:{
-            c = b;
-            break;
-		}
-        case 16:{
-            c = parseInt(b,16);
-            break;
-		}
-        default:{
-            c = b;
-            break;
-		}
-    }
-    return c;*/
-	return parseInt(b, a);
-}
-
 function decryptStart() {
 
 	const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-	let word = $("#codeText").val();
-	let firstnumber = Number($("#firstnumber").val());
-	let secondnumber = Number($("#secondnumber").val());
-	let shift = number_First_Second(firstnumber, secondnumber);
+	const word = $("#codeText").val();
+	const lengthA = alphabet.length;
+	const lengthW = word.length;
+	
+	const shift = parseInt(Number($("#secondnumber").val()), Number($("#firstnumber").val()));
 	let decyrptedCode = "";
-	let lengthA = alphabet.length;
-	let lengthW = word.length;
 
-	for (var i = 0; i < lengthW; i++) {
-		for (var x = 0; x < lengthA; x++) {
+	for (let i = 0; i < lengthW; i++) {
+		for (let x = 0; x < lengthA; x++) {
 			if (word.charAt(i) === alphabet.charAt(x)) {
 				let newAlphabet = x + shift;
 				if (newAlphabet >= lengthA) {
@@ -69,12 +44,11 @@ function decryptStart() {
 		}
 	}
 
-
 	if (lengthW > 0) {
 		
 		$(".codeDecrypte").show();
 		$("#decyrptedCode").html(decyrptedCode);
-		copyText(500);
+		copyText(750);
 
 	} else $(".codeDecrypte").hide();
 
